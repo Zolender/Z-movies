@@ -14,7 +14,7 @@ const App = () => {
   useEffect(() => {
     const fetchMovies = async () => {
       setLoading(true)
-      const response = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=bbe50bc8`)
+      const response = await fetch(`${API_URL}&s=avengers`)
       const data = await response.json()
       setMovieObject(data.Search)
       setLoading(false)
@@ -29,7 +29,6 @@ const App = () => {
     const data = await response.json()
     setMovieObject(data.Search)
     setLoading(false)
-    console.log(data.Search)
   }
 
 
