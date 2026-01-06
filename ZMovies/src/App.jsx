@@ -72,14 +72,9 @@ const App = () => {
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-2xl mx-auto mb-16 text-center">
-          <motion.h2 
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-4xl sm:text-5xl font-extrabold mb-8 tracking-tight text-gray-900 dark:text-white"
-          >
+          <h2 className="text-4xl sm:text-5xl font-extrabold mb-8 tracking-tight text-gray-900 dark:text-white">
             Find your next <span className="text-blue-600 dark:text-blue-500">favorite</span> movie
-          </motion.h2>
+          </h2>
 
           <div className="relative group">
             <div className="absolute inset-0 bg-blue-600/20 dark:bg-blue-500/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300 opacity-50"></div>
@@ -91,7 +86,7 @@ const App = () => {
                 onChange={handleSearchItem}
                 onKeyDown={handleKeyDown}
                 className="flex-1 w-full bg-transparent border-0 py-4 pl-6 pr-4 text-gray-900 dark:text-white placeholder:text-gray-400 focus:ring-0 sm:text-lg"
-              />
+              /> 
               <button
                 onClick={handleClick}
                 className="p-4 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white transition-colors"
